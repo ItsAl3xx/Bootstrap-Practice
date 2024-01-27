@@ -1,18 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+     <!-- Meta tags for character set and responsive design -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <!-- Bootstrap CSS link-->
-    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css"
-
+    <title>Bootstrap Coding Project</title>
+     <!-- Link to Bootstrap CSS for styling -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
 </head>
-<body>
-    <h1>Bootstrap node js</h1>
-    <button class="btn btn-primary">Click Me</button>
-
-    <!-- Bootstrap JS link-->
+<body class="bg-dark text-white">
+    <!--Navbar using Bootstrap classes-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container">
+     <!-- Navbar brand and navigation links -->
+            <a class="navbar-brand" href="#">Navbar</a>
+            <div class="navbar-nav">
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                <a class="nav-link" href="Questions_Form.html">Questions Form</a>
+            </div>
+        </div>
+    </nav>
+    <!--Main Content Section-->
+    <div class="container mt-4">
+     <!-- Heading for the table -->
+        <h2>Sample Table</h2>
+        <div class="row">
+            <div class="col">
+   <!-- Bootstrap table with striped rows -->
+                <table class="table table-dark table-striped">
+     <!-- Table header -->
+                    <thead>
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">First Name</th>
+                            <th scope="col">Last Name</th>
+                            <th scope="col">Email</th>
+                            <th scope="col">github</th>
+                            <th scope="col">Phone Number</th>
+                        </tr>
+                    </thead>
+                    <!-- Table body -->
+                    <tbody>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>Alex</td>
+                            <td>Bravo</td>
+                            <td>alexbravo326@gmail.com</td>
+                            <td>@ItsAl3xx</td>
+                            <td>123-456-7890</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">2</th>
+                            <td>John</td>
+                            <td>Smith</td>
+                            <td>Johnsmith@gmail.com</td>
+                            <td>@JohnSmith</td>
+                            <td>123-456-7890</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>   
+    
+    <!-- Bootstrap JS link -->
     <script src="node_modules/jquery/dist/jquery.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
 </body>
